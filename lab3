@@ -1,0 +1,13 @@
+import math
+eps=0.01
+y=0
+x=1
+b=1
+k=2
+z=(math.sin(k*x))/b
+while math.fabs(z)>eps:
+    y+=z
+    k+=2
+    b+=2
+    z=(math.sin(k*x))/b
+print(y)
